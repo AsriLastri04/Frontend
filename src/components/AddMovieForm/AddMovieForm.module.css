@@ -1,82 +1,87 @@
-
- /*Small Screen*/
- .container{
-   padding: 1rem;
+/*Small Screen*/
+.container {
+  padding: 1rem;
 }
-.AddForm__title{
-   color:#06D6A0;
-   margin-bottom: 1rem;
-   font-size: 1.95rem;
-
+.AddForm__title {
+  color: #06d6a0;
+  margin-bottom: 1rem;
+  font-size: 1.95rem;
 }
 .AddForm__gambar {
-   border-radius: 25px;
-   height: auto;
-   margin-bottom: 1rem;
-   max-width:100%;
+  border-radius: 25px;
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
 }
-.label{
-   display: flex;
-   flex-direction: column;
-   text-align: left;
-   padding:0.1rem;
-   
+.label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-.label__judul{
-   border: 2px solid aquamarine;
-   padding: 0.2rem 2rem;
-   margin-bottom: 1rem;
-   border-radius: 5px;
-   margin-top: 0.5rem;
+.label__judul {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 2px solid aquamarine;
+  margin-bottom: 1rem;
 }
-.AddForm__form{
-   margin:1rem;
+.AddForm__form {
+  margin: 1rem;
 }
 
-.label__Year{
-   margin-top: 0.5rem;
-   border-radius: 5px;
-   padding: 0.2rem 0.5rem;
-   border: 2px solid aquamarine;
+.label__Year {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 2px solid aquamarine;
+  margin-bottom: 1rem;
 }
-  
-.AddForm__button{
-   margin: 1rem;
-   padding:0.4rem 4rem;
-   color:white;
-   border:none;
-   border-radius: 5px;
-   background-color:#06D6A0;
+
+.AddForm__button {
+  margin: 1rem;
+  padding: 0.4rem 4rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #06d6a0;
 }
+
+.label__select {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 2px solid aquamarine;
+  margin-bottom: 1rem;
+}
+
 /* Medium Screen*/
-@media (min-width:768px) {
-   .AddForm__left{
-      display: flex;
-      justify-content: center;
-   }
-   .label{
-      padding: 0.1rem 10rem;
-   }
-}
-  /* Large Screen */
-  @media (min-width:992px) {
-   .AddForm{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-   }
+@media (min-width: 768px) {
+  .AddForm__left {
+    display: flex;
+    justify-content: center;
   }
-
-.AddForm__left{
-   margin-bottom: 1rem;
-   flex-basis: 40%;
+  .label {
+    padding: 0.1rem 10rem;
+  }
+}
+/* Large Screen */
+@media (min-width: 992px) {
+  .AddForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.AddForm__right{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      flex-basis: 50%;
-  }
+.AddForm__left {
+  margin-bottom: 1rem;
+  flex-basis: 40%;
+}
 
+.AddForm__right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 50%;
+}
