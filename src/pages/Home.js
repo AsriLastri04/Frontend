@@ -3,6 +3,7 @@ import Movies from "../components/Movies/Movies";
 import AddMovieForm from "../components/AddMovieForm/AddMovieForm";
 import data from "../utils/constants/data";
 import { useState } from "react";
+
 function Main() {
   const [movies, setMovies] = useState(data);
   return (
