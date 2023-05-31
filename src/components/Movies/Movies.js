@@ -1,6 +1,7 @@
 import styles from "./Movies.module.css";
 import Movie from "../Movie/Movie";
 import { nanoid } from "nanoid";
+import Button from "../ui/Button/Button";
 
 function Movies(props) {
   const { movies, setMovies } = props;
@@ -22,9 +23,9 @@ function Movies(props) {
           {movies.map((movie) => {
             return <Movie key={movie.id} movie={movie} />;
           })}
-          <button className={styles.movies__button} onClick={handleClick}>
+          <Button size="md" onClick={handleClick}>
             Tambah Film
-          </button>
+          </Button>
         </div>
       </section>
     </div>

@@ -2,6 +2,7 @@ import styles from "./AddMovieForm.module.css";
 import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import Error from "../Error/Error";
+import Button from "../ui/Button/Button";
 
 function AddMovieForm(props) {
   const { movies, setMovies } = props;
@@ -74,11 +75,6 @@ function AddMovieForm(props) {
     };
 
     setMovies([...movies, newMovie]);
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
     validate() && addMovie();
   }
 
@@ -135,7 +131,7 @@ function AddMovieForm(props) {
               {isImageError ? <Error> Picture Wajib diisi </Error> : ""}
             </div>
             <div className={styles.label}>
-              <label for="type"> Genre </label>
+              <label htmlFor="type"> Genre </label>
               <select
                 value={type}
                 onChange={handleChange}
@@ -153,13 +149,7 @@ function AddMovieForm(props) {
               {isTypeError ? <Error> Type Wajib diisi </Error> : ""}
             </div>
 
-            <button
-              onClick={handleSubmit}
-              className={styles.AddForm__button}
-              type="submit"
-            >
-              Submit
-            </button>
+            <Button onClick={addMovie}>Add Movie Form</Button>
           </form>
         </div>
       </section>
