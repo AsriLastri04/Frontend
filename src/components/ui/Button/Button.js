@@ -11,7 +11,6 @@ const Button = styled.button`
   cursor: pointer;
   padding: 0.8rem 2rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
 
   background-color: ${(props) =>
     props.theme.colors[props.variant] || props.theme.colors["secondary"]};

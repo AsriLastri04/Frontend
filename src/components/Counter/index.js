@@ -18,7 +18,9 @@ function Counter() {
     document.title = "Hasil : $(angka)";
   }
 
-  useEffect(updateDOM, [angka]);
+  useEffect(() => {
+    updateDOM();
+  }, [angka]);
 
   console.log("LifeCycle : Dirender");
   return (

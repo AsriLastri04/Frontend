@@ -46,7 +46,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .movie {
@@ -69,6 +69,5 @@
 
   .movie {
     flex-basis: 25%;
-    padding: 1rem;
   }
 }

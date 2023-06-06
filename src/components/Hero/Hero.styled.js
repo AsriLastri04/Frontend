@@ -7,9 +7,7 @@ const StyledHero = styled.div`
     flex-direction: column;
     text-align: center;
   }
-  .hero__left {
-    margin-bottom: 1rem;
-  }
+
   h2 {
     color: #06d6a0;
     margin-bottom: 1rem;
@@ -22,14 +20,14 @@ const StyledHero = styled.div`
   }
   p {
     color: #64748b;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
-  .hero__right {
-  }
+
   img {
     max-width: 100%;
     height: auto;
     border-radius: 25px;
+    margin-top: 3rem;
   }
   @media (min-width: 768px) {
     /*
@@ -49,14 +47,6 @@ const StyledHero = styled.div`
       justify-content: space-between;
       align-items: center;
       text-align: left;
-    }
-
-    .hero__left {
-      flex-basis: 40%;
-    }
-
-    .hero__right {
-      flex-basis: 60%;
     }
   }
 `;
