@@ -1,8 +1,8 @@
 function Hello(props) {
     return (
-        <div class = "hello">
+        <div class ="hello">
             <h2>{props.film} </h2>
-            <p> Film ini {props.deskripsi}</p>
+            <p> Film ini{props.deskripsi}</p>
         </div>
     );
 }
