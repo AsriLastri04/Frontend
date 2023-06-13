@@ -105,15 +105,15 @@ function AddMovieForm(props) {
               <select
                 value={select}
                 onChange={handleInputSelect}
-                name=""
-                id=""
+                name="poster"
+                id="poster"
                 className={styles.label__select}
               >
-                <option value="">Action</option>
-                <option value="">Drama</option>
-                <option value="">Horor</option>
-                <option value="">Comedy</option>
-                <option value="">Romance</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Horor">Horor</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
               </select>
             </div>
 
