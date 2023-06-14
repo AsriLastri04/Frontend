@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Button from "../ui/Button/Button";
 import StyledHero from "./Hero.styled";
 import axios from "axios";
+import ENDPOINTS from "../../utils/constants/endpoints";
 
 function Hero() {
   // Membuat state movie
@@ -19,8 +20,7 @@ function Hero() {
 
   // mendapatkan 1 data dari trending movie
   async function getTrendingMovies() {
-    const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
-    const response = await axios(URL);
+    const response = await axios(ENDPOINTS.HERO);
     return response.data.results[Math.floor(Math.random() * 20)];
   }
 
@@ -38,10 +38,10 @@ function Hero() {
   }
 
   return (
-    <StyledHero>
+    <StyledHero className="poster">
       <div>
         <section>
-          <div>
+          <div className="info">
             <h2>{movie.title}</h2>
             <h3>Genre : {genres}</h3>
             <p>{movie.overview}</p>
@@ -58,7 +58,7 @@ function Hero() {
           </div>
           <div>
             <img
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
               alt={movie.Title}
             ></img>
           </div>

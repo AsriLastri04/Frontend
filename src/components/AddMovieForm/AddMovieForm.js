@@ -138,6 +138,7 @@ function AddMovieForm(props) {
                 name="type"
                 id="type"
                 className={styles.label__select}
+                
               >
                 <option value="">Pilih Genre</option>
                 <option value="Action">Action</option>

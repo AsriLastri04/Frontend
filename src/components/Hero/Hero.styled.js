@@ -21,6 +21,7 @@ const StyledHero = styled.div`
   p {
     color: #64748b;
     margin-bottom: 2rem;
+    
   }
 
   img {
@@ -30,10 +31,15 @@ const StyledHero = styled.div`
     margin-top: 3rem;
   }
   @media (min-width: 768px) {
-    /*
-     * Nothing TODO Here.
-     * We dont change style Hero. 
-     */
+    flex-direction: row;
+    text-align: left;
+    .poster {
+      flex-basis: 30%;
+    }
+    .info {
+      flex-basis: 60%;
+    }
+  }
   }
 
   /* Large Screen */

@@ -25,22 +25,23 @@ const StyledNavbar = styled.div`
     color: #fff;
   }
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     h1 {
       margin-bottom: 0;
     }
     ul {
-      display: flex;
       flex-direction: row;
-      justify-content: flex-end;
     }
     li {
       margin: 0 1rem;
     }
   }
   @media (min-width: 992px) {
-  }=
+  }
 `;
 export default StyledNavbar;
