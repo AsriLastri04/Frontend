@@ -10,8 +10,10 @@ function AddMovieForm() {
                 <div className={styles.AddForm__right}>
                     <form className={styles.AddForm__form}>
                         <h2 className={styles.AddForm__title}> Add Movie </h2>
-                        <label className={styles.label}>Title <input className={styles.label__judul} type="text"  /></label>
-                        <label className={styles.label}> Year <input className={styles.label__Year}type="date"  /></label>
+                        <label className={styles.label}>Title </label<input className={styles.label__judul} type="text"  />
+                            <input className={styles.label__judul} type="text"  />
+                        <label className={styles.label}> Year</label>
+                            <input className={styles.label__Year}type="date"  />
                         <button className={styles.AddForm__button}type="submit">Submit</button>
                     </form>
                 </div>
