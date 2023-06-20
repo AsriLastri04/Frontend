@@ -6,7 +6,7 @@ import ENDPOINTS from "../utils/constants/endpoints";
 
 function PopularMovie() {
   // simpan API KEY dan URL ke variable
-  
+
   //Membuat State movies
   const [movies, setMovies] = useState([]);
 
@@ -20,6 +20,7 @@ function PopularMovie() {
     const response = await axios(ENDPOINTS.POPULAR);
     //Simpan data ke state movie
     setMovies(response.data.results);
+
   }
 
   return (

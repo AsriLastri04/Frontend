@@ -20,6 +20,7 @@ function Detail() {
     const response = await axios(ENDPOINTS.RECOMMENDATION(id));
     setMovies(response.data.results);
   }
+
   console.log(movies);
   return (
     <>
