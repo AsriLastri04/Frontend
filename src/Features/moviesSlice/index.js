@@ -17,12 +17,15 @@ const moviesSlice = createSlice({
 
     deletedMovie() {
     },
+    updateMovie(state, action) {
+      state.movies=action.payload
+    }
   },
 });
    
 // generate reducers
 const moviesReducer = moviesSlice.reducer;
-const { addMovie, deletedMovie } = moviesSlice.actions;
+const { addMovie, deletedMovie, updateMovie } = moviesSlice.actions;
 
 export default moviesReducer;
-export { addMovie, deletedMovie };
+export { addMovie, deletedMovie, updateMovie };

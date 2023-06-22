@@ -46,8 +46,6 @@ function AddMovieForm() {
       ...formData,
       [name]: value,
     });
-
-   
   }
 
   function validate() {
@@ -89,8 +87,12 @@ function submitMovie() {
   navigation("/");
 
 }
-
+function handleSubmit(e) {
+  e.preventDefault();
   validate() && submitMovie();
+
+}
+  
 
 return (
   <div className={styles.container}>
@@ -104,7 +106,7 @@ return (
       </div>
 
       <div className={styles.AddForm__right}>
-        <form className={styles.AddForm__form}>
+        <form onSubmit={handleSubmit} className={styles.AddForm__form}>
           <h2 className={styles.AddForm__title}> Add Movie </h2>
 
           <label className={styles.label}>
